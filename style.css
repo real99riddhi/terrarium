@@ -1,0 +1,108 @@
+body {
+    background-color: #e4fffd;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    color: #bb8bf3; /* Change this to any color that contrasts with your background */
+    z-index: 1; /* This will bring the heading to the front */
+    position: relative; /* This is needed for z-index to work */
+}
+#left-container {
+    background-color: #e4f5be;
+    width: 20%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height:fit-content;
+    padding: auto;
+}
+
+#right-container {
+    background-color: #e4f5be;
+    width: 20%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    height:fit-content;
+    padding: auto;
+}
+
+.plant-holder {
+    height: 100vh;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow:auto;
+
+}
+
+.plant {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lid {
+    width: 450px;
+    height: 5px;
+    background: #999;
+    border-radius: 0 0 50% 50%;
+    position: relative;
+    top: 70px;
+    left: 400px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#jar {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%; /* Adjust this value as needed */
+    height: 84%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%/0 0 120px 120px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 100%);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1), inset 0 0 20px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1);
+    filter: contrast(1.2) brightness(0.9)
+}
+
+#jar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%; /* Adjust this value as needed */
+    background: silver;
+    border-radius: 50%/0 0 120px 120px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, silver, #ddd);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1), inset 0 0 20px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+#jar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%; /* Adjust this value as needed */
+    background: linear-gradient(to top, #654321, #836953);
+    border-radius: 0 0 50% 50%/0 0 20px 20px;
+}
+
+    
+
+    
