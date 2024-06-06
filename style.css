@@ -1,5 +1,5 @@
 body {
-    background-color: #e4fffd;
+    background-color: #cedbd3;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -42,8 +42,8 @@ h1 {
 }
 
 .plant {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 32%;
+    margin-top: 1%;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -53,6 +53,7 @@ h1 {
     height: 5px;
     background: #999;
     border-radius: 0 0 50% 50%;
+    margin-bottom: relative;
     position: relative;
     top: 70px;
     left: 400px;
